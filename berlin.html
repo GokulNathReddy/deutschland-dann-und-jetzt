@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Berlin &middot; German Cities: Past and Present</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google model-viewer for 3D models -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body class="city-page">
+  <div class="bg-orbs"><div class="orb-3"></div></div>
+  <div id="cursor-blob"></div>
+  <div class="flag-stripe" aria-hidden="true"></div>
+
+  <header class="island-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" id="logo">
+        <span class="logo-main">German Cities</span>
+        <span class="logo-sub">Past &amp; Present</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="berlin.html" class="active">Berlin</a></li>
+          <li><a href="munich.html">Munich</a></li>
+          <li><a href="hamburg.html">Hamburg</a></li>
+          <li><a href="cologne.html">Cologne</a></li>
+          <li><a href="frankfurt.html">Frankfurt</a></li>
+          <li><a href="dresden.html">Dresden</a></li>
+          <li><a href="leipzig.html">Leipzig</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light/dark mode">
+        <span class="theme-icon" aria-hidden="true">☀️</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="city-hero">
+      <div class="container animate-on-scroll">
+        <p class="city-label">City</p>
+        <h1>Berlin</h1>
+        <p class="city-tagline">
+          From imperial capital to divided city and reunited metropolis, Berlin tells the story of modern Germany.
+        </p>
+      </div>
+    </section>
+
+    <section class="comparison-section">
+      <div class="container">
+        <header class="section-header animate-on-scroll">
+          <h2>Berlin: Past and Present</h2>
+          <p>Use the sliders to compare several historic and modern views across the city.</p>
+        </header>
+
+        <div class="comparison-examples animate-on-scroll">
+          <article class="comparison-example">
+            <h3>Brandenburg Gate &ndash; Symbol of Division and Unity</h3>
+            <p>From a backdrop of the Berlin Wall and border zone to an open square for celebrations and protests.</p>
+            <div class="image-comparison" data-city="berlin">
+              <div class="image-comparison__label image-comparison__label--left">Past</div>
+              <div class="image-comparison__label image-comparison__label--right">Present</div>
+
+              <div class="image-comparison__image-wrapper">
+                <img
+                  src="assets/images/berlin/berlin-1-present.jpg"
+                  alt="Modern view of Brandenburg Gate in Berlin"
+                  class="image-comparison__image"
+                  onerror="this.src=''"
+                />
+                <div class="image-comparison__overlay">
+                  <img
+                    src="assets/images/berlin/berlin-1-past.jpg"
+                    alt="Historical photograph of Brandenburg Gate in Berlin"
+                    class="image-comparison__image"
+                    onerror="this.src=''"
+                  />
+                </div>
+              </div>
+
+              <input
+                type="range"
+                class="image-comparison__slider"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Compare historical and modern Berlin at Brandenburg Gate"
+              />
+            </div>
+          </article>
+
+          <article class="comparison-example">
+            <h3>Alexanderplatz &ndash; From Socialist Showcase to Busy Transport Hub</h3>
+            <p>See how the square and TV tower surroundings changed from the GDR era to today.</p>
+            <div class="image-comparison" data-city="berlin">
+              <div class="image-comparison__label image-comparison__label--left">Past</div>
+              <div class="image-comparison__label image-comparison__label--right">Present</div>
+
+              <div class="image-comparison__image-wrapper">
+                <img
+                  src="assets/images/berlin/berlin-2-present.jpg"
+                  alt="Modern view of Alexanderplatz in Berlin"
+                  class="image-comparison__image"
+                  onerror="this.src=''"
+                />
+                <div class="image-comparison__overlay">
+                  <img
+                    src="assets/images/berlin/berlin-2-past.jpg"
+                    alt="Historical view of Alexanderplatz in Berlin"
+                    class="image-comparison__image"
+                    onerror="this.src=''"
+                  />
+                </div>
+              </div>
+
+              <input
+                type="range"
+                class="image-comparison__slider"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Compare historical and modern Berlin at Alexanderplatz"
+              />
+            </div>
+          </article>
+
+          <article class="comparison-example">
+            <h3>East Side Gallery &ndash; The Wall as Art</h3>
+            <p>Contrast the original border fortifications with today&rsquo;s open-air gallery along the Spree.</p>
+            <div class="image-comparison" data-city="berlin">
+              <div class="image-comparison__label image-comparison__label--left">Past</div>
+              <div class="image-comparison__label image-comparison__label--right">Present</div>
+
+              <div class="image-comparison__image-wrapper">
+                <img
+                  src="assets/images/berlin/berlin-3-present.jpg"
+                  alt="Modern East Side Gallery in Berlin"
+                  class="image-comparison__image"
+                  onerror="this.src=''"
+                />
+                <div class="image-comparison__overlay">
+                  <img
+                    src="assets/images/berlin/berlin-3-past.jpg"
+                    alt="Historic Berlin Wall along the Spree"
+                    class="image-comparison__image"
+                    onerror="this.src=''"
+                  />
+                </div>
+              </div>
+
+              <input
+                type="range"
+                class="image-comparison__slider"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Compare Berlin Wall and East Side Gallery"
+              />
+            </div>
+          </article>
+        </div>
+
+        <p class="comparison-note">
+          Drag the slider to compare historic and modern views side by side.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <div class="container content-grid-inner animate-on-scroll">
+        <section class="content-card">
+          <h2>Short History</h2>
+          <p>
+            Berlin grew from a medieval trading town into the capital of Prussia and later the German Empire. In the
+            20th century it became a focal point of world history: the rise of National Socialism, destruction in the
+            Second World War, and division into East and West during the Cold War. The fall of the Berlin Wall in 1989
+            and reunification in 1990 turned Berlin into a symbol of democratic renewal and European integration.
+          </p>
+        </section>
+
+        <section class="content-card">
+          <h2>Culture &amp; Lifestyle</h2>
+          <p>
+            Today Berlin is known for its creative scene, museums, and nightlife. Neighborhoods like Kreuzberg and
+            Neukölln reflect a mix of immigrant cultures, while Museum Island and the Philharmonie showcase classical
+            art and music. Daily life feels more relaxed than in many capitals: people cycle along the Spree, meet in
+            parks like Tempelhofer Feld, and enjoy street food at weekly markets.
+          </p>
+        </section>
+
+        <section class="content-card">
+          <h2>Food Specialities</h2>
+          <div class="food-grid">
+            <article class="food-item">
+              <img src="assets/images/berlin/berlin-currywurst.jpg" alt="Currywurst with fries" onerror="this.style.display='none'" />
+              <h3>Currywurst</h3>
+              <p>
+                Sliced sausage with spiced ketchup and curry powder, often served with fries. A classic Berlin street
+                food that emerged after the war.
+              </p>
+            </article>
+            <article class="food-item">
+              <img src="assets/images/berlin/berlin-doner.jpg" alt="Döner kebab in flatbread" onerror="this.style.display='none'" />
+              <h3>Döner Kebab</h3>
+              <p>
+                Introduced by Turkish immigrants, Döner has become one of Berlin’s most popular quick meals and
+                reflects the city’s diversity.
+              </p>
+            </article>
+            <article class="food-item">
+              <img src="assets/images/berlin/berlin-berliner.jpg" alt="Berliner Pfannkuchen pastry" onerror="this.style.display='none'" />
+              <h3>Berliner Pfannkuchen</h3>
+              <p>
+                A jam‑filled doughnut enjoyed especially at New Year’s Eve and Carnival, though Berliners simply call
+                it a <em>Pfannkuchen</em>.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-card">
+          <h2>Interesting Facts</h2>
+          <ul class="fact-list">
+            <li>Berlin has more bridges than Venice and numerous inner‑city lakes and canals.</li>
+            <li>The Berlin Wall stood for 28 years; today, segments like the East Side Gallery are open‑air museums.</li>
+            <li>There are over 170 museums in Berlin, ranging from ancient art to everyday life in the GDR.</li>
+            <li>Berlin’s public transport covers three fare zones and is a useful topic for transport‑related vocabulary.</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <section class="landmark-3d">
+      <div class="container animate-on-scroll">
+        <header class="section-header">
+          <h2>3D Landmark Viewer: Brandenburg Gate</h2>
+          <p>
+            Explore a 3D model of the Brandenburg Gate, one of Berlin’s most important symbols. Use it as a prompt for
+            descriptive vocabulary and historical discussion.
+          </p>
+        </header>
+
+        <div class="landmark-embed-wrapper">
+          <model-viewer 
+            src="assets/models/berlin/model.glb" 
+            alt="A 3D model of Brandenburg Gate" 
+            auto-rotate 
+            camera-controls 
+            ar 
+            shadow-intensity="1"
+            loading="lazy">
+            <div class="embed-placeholder" slot="poster" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(0,0,0,0.5); width: 100%; height: 100%; border-radius: 16px;">
+              <svg style="width: 48px; height: 48px; fill: white; margin-bottom: 1rem;" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              <h3 style="color: white; margin-bottom: 0.5rem; text-align: center;">Loading 3D Model...</h3>
+              <p style="color: rgba(255,255,255,0.8); text-align: center;">Brandenburg Gate (~3.9 MB)</p>
+            </div>
+          </model-viewer>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Berlin &middot; German Cities: Past and Present.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+

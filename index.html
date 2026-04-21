@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore seven German cities through interactive past and present comparisons, cultural insights, food traditions, and 3D landmarks." />
+  <title>German Cities: Past and Present</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient elements -->
+  <div class="bg-orbs"><div class="orb-3"></div></div>
+  <div id="cursor-blob"></div>
+  <div class="flag-stripe" aria-hidden="true"></div>
+
+  <header class="island-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" id="logo">
+        <span class="logo-main">German Cities</span>
+        <span class="logo-sub">Past &amp; Present</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="berlin.html">Berlin</a></li>
+          <li><a href="munich.html">Munich</a></li>
+          <li><a href="hamburg.html">Hamburg</a></li>
+          <li><a href="cologne.html">Cologne</a></li>
+          <li><a href="frankfurt.html">Frankfurt</a></li>
+          <li><a href="dresden.html">Dresden</a></li>
+          <li><a href="leipzig.html">Leipzig</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light/dark mode">
+        <span class="theme-icon" aria-hidden="true">☀️</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner animate-on-scroll">
+        <div class="hero-text">
+          <h1>German Cities: Past and Present</h1>
+          <p>
+            Germany's cities have been shaped by empires, wars, division, and reunification. This digital
+            mini‑museum lets you explore how major cities—Berlin, Munich, Hamburg, Cologne, Frankfurt, Dresden, and
+            Leipzig—looked in the past compared to today, while discovering their culture, food, and unique histories.
+          </p>
+          <p>
+            Use the interactive sliders on each city page to compare historical photographs with modern views, and
+            follow the sections to learn about traditions, daily life, and iconic dishes.
+          </p>
+        </div>
+        <div class="hero-highlight">
+          <h2>A visual journey through time</h2>
+          <p>
+            Discover history, culture, and food through stunning past &amp; present comparisons across Germany's most iconic cities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="city-grid-section">
+      <div class="container">
+        <header class="section-header animate-on-scroll">
+          <h2>Explore the Cities</h2>
+          <p>Select a city to compare its past and present and learn more about its culture.</p>
+        </header>
+
+        <div class="city-grid animate-on-scroll">
+          <article class="city-card" onclick="location.href='berlin.html'">
+            <div class="city-image city-image--berlin" aria-hidden="true">
+              <img src="assets/images/berlin/berlin-card.jpg" alt="" onerror="this.style.display='none'" />
+            </div>
+            <div class="city-card-body">
+              <h3>Berlin</h3>
+              <p>From Prussian capital to a divided Cold War city and today's creative tech hub, Berlin's streets carry layered histories.</p>
+              <a href="berlin.html" class="btn">Visit Berlin</a>
+            </div>
+          </article>
+
+          <article class="city-card" onclick="location.href='munich.html'">
+            <div class="city-image city-image--munich" aria-hidden="true">
+              <img src="assets/images/munich/munich-card.jpg" alt="" onerror="this.style.display='none'" />
+            </div>
+            <div class="city-card-body">
+              <h3>Munich (München)</h3>
+              <p>The capital of Bavaria blends royal palaces and baroque churches with beer gardens, high‑tech industries, and Oktoberfest traditions.</p>
+              <a href="munich.html" class="btn">Visit Munich</a>
+            </div>
+          </article>
+
+          <article class="city-card" onclick="location.href='hamburg.html'">
+            <div class="city-image city-image--hamburg" aria-hidden="true">
+              <img src="assets/images/hamburg/hamburg-card.jpg" alt="" onerror="this.style.display='none'" />
+            </div>
+            <div class="city-card-body">
+              <h3>Hamburg</h3>
+              <p>Once a powerful Hanseatic trading port, Hamburg is now a modern harbor metropolis of canals, warehouses, and concert halls.</p>
+              <a href="hamburg.html" class="btn">Visit Hamburg</a>
+            </div>
+          </article>
+
+          <article class="city-card" onclick="location.href='cologne.html'">
+            <div class="city-image city-image--cologne" aria-hidden="true">
+              <img src="assets/images/cologne/cologne-card.jpg" alt="" onerror="this.style.display='none'" />
+            </div>
+            <div class="city-card-body">
+              <h3>Cologne (Köln)</h3>
+              <p>Famous for its Gothic cathedral and joyful Carnival season, Cologne connects Roman roots with a vibrant Rhine‑side present.</p>
+              <a href="cologne.html" class="btn">Visit Cologne</a>
+            </div>
+          </article>
+
+          <article class="city-card" onclick="location.href='frankfurt.html'">
+            <div class="city-image city-image--frankfurt" aria-hidden="true">
+              <img src="assets/images/frankfurt/frankfurt-card.jpg" alt="" onerror="this.style.display='none'" />
+            </div>
+            <div class="city-card-body">
+              <h3>Frankfurt am Main</h3>
+              <p>Known for its skyline and banking district, Frankfurt combines medieval trade, post-war rebuilding, and a globalised present.</p>
+              <a href="frankfurt.html" class="btn">Visit Frankfurt</a>
+            </div>
+          </article>
+
+          <article class="city-card" onclick="location.href='dresden.html'">
+            <div class="city-image city-image--dresden" aria-hidden="true">
+              <img src="assets/images/dresden/dresden-card.jpg" alt="" onerror="this.style.display='none'" />
+            </div>
+            <div class="city-card-body">
+              <h3>Dresden</h3>
+              <p>Once called the "Florence on the Elbe", Dresden showcases dramatic destruction and careful baroque reconstruction.</p>
+              <a href="dresden.html" class="btn">Visit Dresden</a>
+            </div>
+          </article>
+
+          <article class="city-card" onclick="location.href='leipzig.html'">
+            <div class="city-image city-image--leipzig" aria-hidden="true">
+              <img src="assets/images/leipzig/leipzig-card.jpg" alt="" onerror="this.style.display='none'" />
+            </div>
+            <div class="city-card-body">
+              <h3>Leipzig</h3>
+              <p>A trade fair and music city that played a central role in the peaceful revolution leading to German reunification.</p>
+              <a href="leipzig.html" class="btn">Visit Leipzig</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>German Cities: Past and Present</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

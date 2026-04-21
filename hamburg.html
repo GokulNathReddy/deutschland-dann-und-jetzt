@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamburg &middot; German Cities: Past and Present</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google model-viewer for 3D models -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body class="city-page">
+  <div class="bg-orbs"><div class="orb-3"></div></div>
+  <div id="cursor-blob"></div>
+  <div class="flag-stripe" aria-hidden="true"></div>
+
+  <header class="island-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" id="logo">
+        <span class="logo-main">German Cities</span>
+        <span class="logo-sub">Past &amp; Present</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="berlin.html">Berlin</a></li>
+          <li><a href="munich.html">Munich</a></li>
+          <li><a href="hamburg.html" class="active">Hamburg</a></li>
+          <li><a href="cologne.html">Cologne</a></li>
+          <li><a href="frankfurt.html">Frankfurt</a></li>
+          <li><a href="dresden.html">Dresden</a></li>
+          <li><a href="leipzig.html">Leipzig</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light/dark mode">
+        <span class="theme-icon" aria-hidden="true">☀️</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="city-hero">
+      <div class="container animate-on-scroll">
+        <p class="city-label">City</p>
+        <h1>Hamburg</h1>
+        <p class="city-tagline">
+          A Hanseatic trading city where historic warehouses, docks, and canals meet innovative architecture and music.
+        </p>
+      </div>
+    </section>
+
+    <section class="comparison-section">
+      <div class="container">
+        <header class="section-header animate-on-scroll">
+          <h2>Hamburg: Past and Present</h2>
+          <p>Discover how the port, warehouse district, and riverside skyline evolved.</p>
+        </header>
+
+        <div class="comparison-examples animate-on-scroll">
+          <article class="comparison-example">
+            <h3>Speicherstadt Warehouses</h3>
+            <p>See the transition from working warehouse district to UNESCO&ndash;listed heritage and offices.</p>
+            <div class="image-comparison" data-city="hamburg">
+              <div class="image-comparison__label image-comparison__label--left">Past</div>
+              <div class="image-comparison__label image-comparison__label--right">Present</div>
+
+              <div class="image-comparison__image-wrapper">
+                <img
+                  src="assets/images/hamburg/hamburg-1-present.jpg"
+                  alt="Modern view of Speicherstadt in Hamburg"
+                  class="image-comparison__image"
+                  onerror="this.src=''"
+                />
+                <div class="image-comparison__overlay">
+                  <img
+                    src="assets/images/hamburg/hamburg-1-past.jpg"
+                    alt="Historical photograph of Speicherstadt in Hamburg"
+                    class="image-comparison__image"
+                    onerror="this.src=''"
+                  />
+                </div>
+              </div>
+
+              <input
+                type="range"
+                class="image-comparison__slider"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Compare historical and modern Hamburg Speicherstadt"
+              />
+            </div>
+          </article>
+
+          <article class="comparison-example">
+            <h3>Landungsbrücken and Harbor</h3>
+            <p>Compare old passenger piers and ships with the modern mix of ferries, tourists, and container traffic.</p>
+            <div class="image-comparison" data-city="hamburg">
+              <div class="image-comparison__label image-comparison__label--left">Past</div>
+              <div class="image-comparison__label image-comparison__label--right">Present</div>
+
+              <div class="image-comparison__image-wrapper">
+                <img
+                  src="assets/images/hamburg/hamburg-2-present.jpg"
+                  alt="Modern view of Landungsbrücken in Hamburg"
+                  class="image-comparison__image"
+                  onerror="this.src=''"
+                />
+                <div class="image-comparison__overlay">
+                  <img
+                    src="assets/images/hamburg/hamburg-2-past.jpg"
+                    alt="Historic view of Landungsbrücken in Hamburg"
+                    class="image-comparison__image"
+                    onerror="this.src=''"
+                  />
+                </div>
+              </div>
+
+              <input
+                type="range"
+                class="image-comparison__slider"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Compare historical and modern Hamburg Landungsbrücken"
+              />
+            </div>
+          </article>
+
+          <article class="comparison-example">
+            <h3>Elbphilharmonie and HafenCity</h3>
+            <p>Contrast the former docklands with today&rsquo;s cultural landmark and new urban quarter.</p>
+            <div class="image-comparison" data-city="hamburg">
+              <div class="image-comparison__label image-comparison__label--left">Past</div>
+              <div class="image-comparison__label image-comparison__label--right">Present</div>
+
+              <div class="image-comparison__image-wrapper">
+                <img
+                  src="assets/images/hamburg/hamburg-3-present.jpg"
+                  alt="Modern Elbphilharmonie and HafenCity in Hamburg"
+                  class="image-comparison__image"
+                  onerror="this.src=''"
+                />
+                <div class="image-comparison__overlay">
+                  <img
+                    src="assets/images/hamburg/hamburg-3-past.jpg"
+                    alt="Historic docklands area in Hamburg"
+                    class="image-comparison__image"
+                    onerror="this.src=''"
+                  />
+                </div>
+              </div>
+
+              <input
+                type="range"
+                class="image-comparison__slider"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Compare historical docklands and modern HafenCity in Hamburg"
+              />
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <div class="container content-grid-inner animate-on-scroll">
+        <section class="content-card">
+          <h2>Short History</h2>
+          <p>
+            Hamburg joined the Hanseatic League in the Middle Ages and became one of northern Europe’s most important
+            ports. Its merchants traded goods from around the world, and the city developed a strong sense of
+            independence. Fires, floods, and wartime destruction reshaped Hamburg several times, but the harbor always
+            remained the economic heart. Today the Port of Hamburg continues to be a major gateway for global trade.
+          </p>
+        </section>
+
+        <section class="content-card">
+          <h2>Culture &amp; Lifestyle</h2>
+          <p>
+            Life in Hamburg is closely connected to the water: the Elbe River, canals, and the Alster lakes. Locals
+            enjoy boat trips, strolls along the Landungsbrücken, and concerts at the Elbphilharmonie concert hall.
+            The St. Pauli district and the Reeperbahn are known for nightlife and music history, including early
+            performances by The Beatles.
+          </p>
+        </section>
+
+        <section class="content-card">
+          <h2>Food Specialities</h2>
+          <div class="food-grid">
+            <article class="food-item">
+              <img src="assets/images/hamburg/hamburg-fischbroetchen.jpg" alt="Fish sandwich with herring" onerror="this.style.display='none'" />
+              <h3>Fischbrötchen</h3>
+              <p>
+                A fresh fish sandwich, often with pickled herring or fried fish, onions, and salad—perfect harbor
+                street food.
+              </p>
+            </article>
+            <article class="food-item">
+              <img src="assets/images/hamburg/hamburg-labskaus.jpg" alt="Plate of Labskaus" onerror="this.style.display='none'" />
+              <h3>Labskaus</h3>
+              <p>
+                A traditional sailor’s dish made with corned beef, potatoes, and beetroot, typically served with
+                gherkins and fried egg.
+              </p>
+            </article>
+            <article class="food-item">
+              <img src="assets/images/hamburg/hamburg-franzbroetchen.jpg" alt="Sweet Franzbrötchen pastry" onerror="this.style.display='none'" />
+              <h3>Franzbrötchen</h3>
+              <p>
+                A sweet, cinnamon‑flavoured pastry often eaten for breakfast or with coffee, typical of Hamburg’s
+                bakery culture.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-card">
+          <h2>Interesting Facts</h2>
+          <ul class="fact-list">
+            <li>Hamburg has more canals than Amsterdam and Venice combined.</li>
+            <li>The Speicherstadt is the largest warehouse district in the world built on timber‑pile foundations.</li>
+            <li>Many cruise ships are built and launched from shipyards in and around Hamburg.</li>
+            <li>The city is a federal state in its own right, officially the “Free and Hanseatic City of Hamburg”.</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Hamburg &middot; German Cities: Past and Present.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+

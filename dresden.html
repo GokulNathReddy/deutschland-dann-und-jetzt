@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Dresden through interactive past and present comparisons of the Frauenkirche, Brühl's Terrace, and the Zwinger, alongside Saxon food traditions." />
+  <title>Dresden &middot; German Cities: Past and Present</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body class="city-page">
+  <div class="bg-orbs"><div class="orb-3"></div></div>
+  <div id="cursor-blob"></div>
+  <div class="flag-stripe" aria-hidden="true"></div>
+
+  <header class="island-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" id="logo">
+        <span class="logo-main">German Cities</span>
+        <span class="logo-sub">Past &amp; Present</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="berlin.html">Berlin</a></li>
+          <li><a href="munich.html">Munich</a></li>
+          <li><a href="hamburg.html">Hamburg</a></li>
+          <li><a href="cologne.html">Cologne</a></li>
+          <li><a href="frankfurt.html">Frankfurt</a></li>
+          <li><a href="dresden.html" class="active">Dresden</a></li>
+          <li><a href="leipzig.html">Leipzig</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light/dark mode">
+        <span class="theme-icon" aria-hidden="true">☀️</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="city-hero">
+      <div class="container animate-on-scroll">
+        <p class="city-label">City</p>
+        <h1>Dresden</h1>
+        <p class="city-tagline">
+          Baroque palaces on the Elbe that were almost completely destroyed in 1945 and painstakingly reconstructed after reunification.
+        </p>
+      </div>
+    </section>
+
+    <section class="comparison-section">
+      <div class="container">
+        <header class="section-header animate-on-scroll">
+          <h2>Dresden: Past and Present</h2>
+          <p>Observe how destruction, empty spaces, and reconstructed landmarks transformed the cityscape.</p>
+        </header>
+
+        <div class="comparison-examples animate-on-scroll">
+          <article class="comparison-example">
+            <h3>Frauenkirche &ndash; From Rubble to Resurrection</h3>
+            <p>The bombed-out ruins of the Frauenkirche, with the Martin Luther statue pedestal standing amid heaps of stone, compared to the fully reconstructed church illuminated at twilight today.</p>
+            <div class="image-comparison" data-city="dresden">
+              <div class="image-comparison__label image-comparison__label--left">Past</div>
+              <div class="image-comparison__label image-comparison__label--right">Present</div>
+              <div class="image-comparison__image-wrapper">
+                <img src="assets/images/dresden/dresden-1-present.jpg" alt="Rebuilt Frauenkirche in Dresden illuminated at dusk with surrounding buildings" class="image-comparison__image" onerror="this.src=''" />
+                <div class="image-comparison__overlay">
+                  <img src="assets/images/dresden/dresden-1-past.jpg" alt="Ruins of the Frauenkirche in Dresden after 1945 bombing with Martin Luther statue pedestal" class="image-comparison__image" onerror="this.src=''" />
+                </div>
+              </div>
+              <input type="range" class="image-comparison__slider" min="0" max="100" value="50" aria-label="Compare Frauenkirche ruins and rebuilt church in Dresden" />
+            </div>
+          </article>
+
+          <article class="comparison-example">
+            <h3>Brühl&rsquo;s Terrace and the Elbe Skyline</h3>
+            <p>Contrast the pre-war panorama of Dresden&rsquo;s elegant riverside skyline with bridges and steamboats against today&rsquo;s bustling terrace promenade with the restored Hofkirche and Semperoper.</p>
+            <div class="image-comparison" data-city="dresden">
+              <div class="image-comparison__label image-comparison__label--left">Past</div>
+              <div class="image-comparison__label image-comparison__label--right">Present</div>
+              <div class="image-comparison__image-wrapper">
+                <img src="assets/images/dresden/dresden-2-present.jpg" alt="Modern Brühl's Terrace with restored Hofkirche, Semperoper, and visitors" class="image-comparison__image" onerror="this.src=''" />
+                <div class="image-comparison__overlay">
+                  <img src="assets/images/dresden/dresden-2-past.jpg" alt="Historic Dresden skyline from the Elbe showing bridges, steamboats, and church spires" class="image-comparison__image" onerror="this.src=''" />
+                </div>
+              </div>
+              <input type="range" class="image-comparison__slider" min="0" max="100" value="50" aria-label="Compare historical and modern Brühl's Terrace in Dresden" />
+            </div>
+          </article>
+
+          <article class="comparison-example">
+            <h3>Zwinger Palace &ndash; Wallpavillon to Kronentor</h3>
+            <p>View the ornate Wallpavillon gallery wing in a historic sepia photograph next to the restored Kronentor (Crown Gate) with its gleaming golden crown rising against a clear sky.</p>
+            <div class="image-comparison" data-city="dresden">
+              <div class="image-comparison__label image-comparison__label--left">Past</div>
+              <div class="image-comparison__label image-comparison__label--right">Present</div>
+              <div class="image-comparison__image-wrapper">
+                <img src="assets/images/dresden/dresden-3-present.jpg" alt="Restored Zwinger Kronentor (Crown Gate) with golden crown finial in Dresden" class="image-comparison__image" onerror="this.src=''" />
+                <div class="image-comparison__overlay">
+                  <img src="assets/images/dresden/dresden-3-past.jpg" alt="Historic sepia view of the Zwinger Wallpavillon with baroque statuary in Dresden" class="image-comparison__image" onerror="this.src=''" />
+                </div>
+              </div>
+              <input type="range" class="image-comparison__slider" min="0" max="100" value="50" aria-label="Compare historic Wallpavillon and restored Kronentor of the Zwinger in Dresden" />
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <div class="container content-grid-inner animate-on-scroll">
+        <section class="content-card">
+          <h2>Short History</h2>
+          <p>
+            Dresden became the residence of the Saxon electors and kings and was famous for its baroque architecture
+            and art collections. During the Second World War, severe bombing destroyed much of the historic center.
+            In the GDR era, some ruins remained as memorials; after reunification, major projects such as the
+            rebuilding of the Frauenkirche began. Today Dresden again presents itself as a cultural capital on the Elbe.
+          </p>
+        </section>
+
+        <section class="content-card">
+          <h2>Culture &amp; Lifestyle</h2>
+          <p>
+            Dresden offers classical concerts, opera, and galleries, but also modern street culture along the Neustadt
+            district. The Elbe meadows serve as a green relaxation area, and festivals bring together local traditions
+            and visitors. The mixture of old and new buildings invites discussion about memory, identity, and urban
+            development in Germany.
+          </p>
+        </section>
+
+        <section class="content-card">
+          <h2>Food Specialities</h2>
+          <div class="food-grid">
+            <article class="food-item">
+              <img src="assets/images/dresden/dresden-stollen.jpg" alt="Sliced Dresdner Stollen with raisins and powdered sugar on a wooden cutting board" onerror="this.style.display='none'" />
+              <h3>Dresdner Stollen</h3>
+              <p>A rich Christmas fruit bread packed with raisins and dusted generously with powdered sugar, protected as a regional specialty of Dresden.</p>
+            </article>
+            <article class="food-item">
+              <img src="assets/images/dresden/dresden-eierschecke.jpg" alt="Whole Eierschecke cake on a stand with a slice cut, showing its layered interior, served with coffee" onerror="this.style.display='none'" />
+              <h3>Eierschecke</h3>
+              <p>A layered Saxon cake with a shortcrust base, a quark filling, and a golden custard-like topping — best enjoyed with a cup of coffee.</p>
+            </article>
+            <article class="food-item">
+              <img src="assets/images/dresden/dresden-saxon-sausage.jpg" alt="Pan-fried Saxon Bratwürste in a cast-iron skillet garnished with parsley" onerror="this.style.display='none'" />
+              <h3>Sächsische Bratwurst</h3>
+              <p>Hearty pan-fried sausages browned to a crisp in a cast-iron skillet, reflecting the robust flavours of traditional Saxon cuisine.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-card">
+          <h2>Interesting Facts</h2>
+          <ul class="fact-list">
+            <li>Dresden is sometimes called the "Florence on the Elbe" because of its art and architecture.</li>
+            <li>The Frauenkirche reconstruction used original stones that had been catalogued and stored for decades.</li>
+            <li>The city hosts the Striezelmarkt, one of Germany&rsquo;s oldest Christmas markets, dating back to 1434.</li>
+            <li>Dresden lies close to the Elbe Sandstone Mountains (Sächsische Schweiz), a popular hiking region.</li>
+            <li>The Zwinger&rsquo;s Kronentor is crowned by a replica of the Polish royal crown, symbolising Saxony&rsquo;s historic union with Poland.</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <section class="landmark-3d">
+      <div class="container animate-on-scroll">
+        <header class="section-header">
+          <h2>3D Landmark Viewer: Frauenkirche</h2>
+          <p>Explore a 3D model of Dresden's iconic Frauenkirche — a masterpiece of baroque reconstruction.</p>
+        </header>
+
+        <div class="landmark-embed-wrapper">
+          <model-viewer
+            src="assets/models/dresden/model.glb"
+            alt="A 3D model of the Frauenkirche in Dresden"
+            auto-rotate
+            camera-controls
+            ar
+            shadow-intensity="1"
+            loading="lazy">
+            <div class="embed-placeholder" slot="poster" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(0,0,0,0.5); width: 100%; height: 100%; border-radius: 16px;">
+              <svg style="width: 48px; height: 48px; fill: white; margin-bottom: 1rem;" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              <h3 style="color: white; margin-bottom: 0.5rem; text-align: center;">Loading 3D Model...</h3>
+              <p style="color: rgba(255,255,255,0.8); text-align: center;">Frauenkirche (~1.5 MB)</p>
+            </div>
+          </model-viewer>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Dresden &middot; German Cities: Past and Present.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

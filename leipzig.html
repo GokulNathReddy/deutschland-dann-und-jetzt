@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Leipzig through interactive past and present comparisons of St. Nicholas Church, the Market Square, and Plagwitz, alongside Saxon food traditions and garden culture." />
+  <title>Leipzig &middot; German Cities: Past and Present</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body class="city-page">
+  <div class="bg-orbs"><div class="orb-3"></div></div>
+  <div id="cursor-blob"></div>
+  <div class="flag-stripe" aria-hidden="true"></div>
+
+  <header class="island-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" id="logo">
+        <span class="logo-main">German Cities</span>
+        <span class="logo-sub">Past &amp; Present</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="berlin.html">Berlin</a></li>
+          <li><a href="munich.html">Munich</a></li>
+          <li><a href="hamburg.html">Hamburg</a></li>
+          <li><a href="cologne.html">Cologne</a></li>
+          <li><a href="frankfurt.html">Frankfurt</a></li>
+          <li><a href="dresden.html">Dresden</a></li>
+          <li><a href="leipzig.html" class="active">Leipzig</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light/dark mode">
+        <span class="theme-icon" aria-hidden="true">☀️</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="city-hero">
+      <div class="container animate-on-scroll">
+        <p class="city-label">City</p>
+        <h1>Leipzig</h1>
+        <p class="city-tagline">
+          A trade fair and music city that became a key location of the peaceful protests leading to German reunification.
+        </p>
+      </div>
+    </section>
+
+    <section class="comparison-section">
+      <div class="container">
+        <header class="section-header animate-on-scroll">
+          <h2>Leipzig: Past and Present</h2>
+          <p>Follow Leipzig&rsquo;s development from trade crossroads to GDR city and modern creative hub.</p>
+        </header>
+
+        <div class="comparison-examples animate-on-scroll">
+          <article class="comparison-example">
+            <h3>St. Nicholas Church &ndash; Heart of the Peaceful Revolution</h3>
+            <p>Compare the Gothic church in its austere post-war surroundings with the same landmark today, framed by modern developments and landscaped green space.</p>
+            <div class="image-comparison" data-city="leipzig">
+              <div class="image-comparison__label image-comparison__label--left">Past</div>
+              <div class="image-comparison__label image-comparison__label--right">Present</div>
+              <div class="image-comparison__image-wrapper">
+                <img src="assets/images/leipzig/leipzig-1-present.jpg" alt="Modern view of St. Nicholas Church in Leipzig with surrounding modern buildings and greenery" class="image-comparison__image" onerror="this.src=''" />
+                <div class="image-comparison__overlay">
+                  <img src="assets/images/leipzig/leipzig-1-past.jpg" alt="Historic black-and-white view of St. Nicholas Church in Leipzig with Gothic spire" class="image-comparison__image" onerror="this.src=''" />
+                </div>
+              </div>
+              <input type="range" class="image-comparison__slider" min="0" max="100" value="50" aria-label="Compare historical and modern St. Nicholas Church in Leipzig" />
+            </div>
+          </article>
+
+          <article class="comparison-example">
+            <h3>Market Square &ndash; From Trade Hub to Festival Ground</h3>
+            <p>Contrast an early photograph of the bustling open-air market with horse-drawn carts against today&rsquo;s lively square featuring festive stalls, the König Albert Haus, and ornate baroque facades.</p>
+            <div class="image-comparison" data-city="leipzig">
+              <div class="image-comparison__label image-comparison__label--left">Past</div>
+              <div class="image-comparison__label image-comparison__label--right">Present</div>
+              <div class="image-comparison__image-wrapper">
+                <img src="assets/images/leipzig/leipzig-2-present.jpg" alt="Modern Leipzig Market Square with festive market stalls and König Albert Haus" class="image-comparison__image" onerror="this.src=''" />
+                <div class="image-comparison__overlay">
+                  <img src="assets/images/leipzig/leipzig-2-past.jpg" alt="Historic open-air market in Leipzig with horse-drawn carts and covered vendor stalls" class="image-comparison__image" onerror="this.src=''" />
+                </div>
+              </div>
+              <input type="range" class="image-comparison__slider" min="0" max="100" value="50" aria-label="Compare historical and modern market square in Leipzig" />
+            </div>
+          </article>
+
+          <article class="comparison-example">
+            <h3>Plagwitz &ndash; Industrial Canal to Creative Quarter</h3>
+            <p>See how a lattice bridge over the canal, once surrounded by rowboats and trees, now stands as a preserved iron truss bridge beside converted red-brick factory lofts with balconies.</p>
+            <div class="image-comparison" data-city="leipzig">
+              <div class="image-comparison__label image-comparison__label--left">Past</div>
+              <div class="image-comparison__label image-comparison__label--right">Present</div>
+              <div class="image-comparison__image-wrapper">
+                <img src="assets/images/leipzig/leipzig-3-present.jpg" alt="Modern Plagwitz iron bridge with converted red-brick factory lofts in Leipzig" class="image-comparison__image" onerror="this.src=''" />
+                <div class="image-comparison__overlay">
+                  <img src="assets/images/leipzig/leipzig-3-past.jpg" alt="Historic lattice bridge over Plagwitz canal with rowboats in Leipzig" class="image-comparison__image" onerror="this.src=''" />
+                </div>
+              </div>
+              <input type="range" class="image-comparison__slider" min="0" max="100" value="50" aria-label="Compare historical and modern Leipzig Plagwitz district" />
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <div class="container content-grid-inner animate-on-scroll">
+        <section class="content-card">
+          <h2>Short History</h2>
+          <p>
+            Leipzig has been an important trade fair city since the Middle Ages, located at the crossroads of major
+            routes. It became known for its publishing houses and universities, and for composers such as Bach and
+            Mendelssohn. In the GDR, Leipzig was an industrial and cultural center. The Monday demonstrations of 1989,
+            which started at St. Nicholas Church, played a major role in the peaceful revolution.
+          </p>
+        </section>
+
+        <section class="content-card">
+          <h2>Culture &amp; Lifestyle</h2>
+          <p>
+            Today Leipzig is popular with students and artists. The city offers classical music at the Gewandhaus
+            and the Opera, but also alternative culture, street art, and independent cinemas. Old factories have been
+            turned into studios and cultural spaces. Lakes around the city, created from former open-cast mines,
+            provide recreation in summer.
+          </p>
+        </section>
+
+        <section class="content-card">
+          <h2>Food &amp; Garden Culture</h2>
+          <div class="food-grid">
+            <article class="food-item">
+              <img src="assets/images/leipzig/leipzig-lerche.jpg" alt="Batch of golden Leipziger Lerche pastries with cross-shaped pastry lids on a white plate" onerror="this.style.display='none'" />
+              <h3>Leipziger Lerche</h3>
+              <p>Small shortcrust pastries filled with marzipan and nuts, topped with a cross-shaped pastry lid. Originally made with lark meat, they were reinvented after a hunting ban in 1876.</p>
+            </article>
+            <article class="food-item">
+              <img src="assets/images/leipzig/leipzig-allotment.jpg" alt="Lush allotment garden rows with lettuce, runner beans on canes, and green vegetables" onerror="this.style.display='none'" />
+              <h3>Schrebergärten</h3>
+              <p>Leipzig is the birthplace of the allotment garden movement. These small urban plots with vegetables and flowers remain a beloved weekend tradition in eastern Germany.</p>
+            </article>
+            <article class="food-item">
+              <img src="assets/images/leipzig/leipzig-saxon-dishes.jpg" alt="Traditional Saxon plate with sliced smoked pork, sausages, Grünkohl, and roasted potatoes with mustard" onerror="this.style.display='none'" />
+              <h3>Sächsischer Schlachteteller</h3>
+              <p>A hearty Saxon meat plate with sliced smoked pork, sausages, Grünkohl (kale), and roasted potatoes — a staple of traditional Leipzig pubs.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-card">
+          <h2>Interesting Facts</h2>
+          <ul class="fact-list">
+            <li>Johann Sebastian Bach worked as Thomaskantor (choir director) in Leipzig for 27 years.</li>
+            <li>The Leipzig Trade Fair has run since the 12th century and remains an important economic event.</li>
+            <li>Leipzig is known for the "Leipzig School" of painting and a lively contemporary art scene.</li>
+            <li>The city&rsquo;s nickname is "Hypezig" because of its growing cultural and creative industries.</li>
+            <li>Leipzig&rsquo;s Schreberverein, founded in 1864, is considered the world&rsquo;s first official allotment association.</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Leipzig &middot; German Cities: Past and Present.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

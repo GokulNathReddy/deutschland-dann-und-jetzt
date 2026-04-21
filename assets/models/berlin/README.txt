@@ -1,0 +1,1 @@
+Drop the berlin model.glb here.

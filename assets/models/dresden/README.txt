@@ -1,0 +1,1 @@
+Drop the dresden model.glb here.

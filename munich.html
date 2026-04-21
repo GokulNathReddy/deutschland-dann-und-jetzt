@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Munich &middot; German Cities: Past and Present</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google model-viewer for 3D models -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body class="city-page">
+  <div class="bg-orbs"><div class="orb-3"></div></div>
+  <div id="cursor-blob"></div>
+  <div class="flag-stripe" aria-hidden="true"></div>
+
+  <header class="island-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" id="logo">
+        <span class="logo-main">German Cities</span>
+        <span class="logo-sub">Past &amp; Present</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="berlin.html">Berlin</a></li>
+          <li><a href="munich.html" class="active">Munich</a></li>
+          <li><a href="hamburg.html">Hamburg</a></li>
+          <li><a href="cologne.html">Cologne</a></li>
+          <li><a href="frankfurt.html">Frankfurt</a></li>
+          <li><a href="dresden.html">Dresden</a></li>
+          <li><a href="leipzig.html">Leipzig</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light/dark mode">
+        <span class="theme-icon" aria-hidden="true">☀️</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="city-hero">
+      <div class="container animate-on-scroll">
+        <p class="city-label">City</p>
+        <h1>Munich (München)</h1>
+        <p class="city-tagline">
+          A royal Bavarian capital that transformed into a modern high‑tech and cultural center on the Isar River.
+        </p>
+      </div>
+    </section>
+
+    <section class="comparison-section">
+      <div class="container">
+        <header class="section-header animate-on-scroll">
+          <h2>Munich: Past and Present</h2>
+          <p>Explore how central squares, churches, and festival grounds have changed over time.</p>
+        </header>
+
+        <div class="comparison-examples animate-on-scroll">
+          <article class="comparison-example">
+            <h3>Marienplatz &ndash; The Heart of the Old Town</h3>
+            <p>Compare historic market scenes with today&rsquo;s pedestrian zone and Neues Rathaus.</p>
+            <div class="image-comparison" data-city="munich">
+              <div class="image-comparison__label image-comparison__label--left">Past</div>
+              <div class="image-comparison__label image-comparison__label--right">Present</div>
+
+              <div class="image-comparison__image-wrapper">
+                <img
+                  src="assets/images/munich/munich-1-present.jpg"
+                  alt="Modern view of Marienplatz in Munich"
+                  class="image-comparison__image"
+                  onerror="this.src=''"
+                />
+                <div class="image-comparison__overlay">
+                  <img
+                    src="assets/images/munich/munich-1-past.jpg"
+                    alt="Historical photograph of Marienplatz in Munich"
+                    class="image-comparison__image"
+                    onerror="this.src=''"
+                  />
+                </div>
+              </div>
+
+              <input
+                type="range"
+                class="image-comparison__slider"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Compare historical and modern Munich at Marienplatz"
+              />
+            </div>
+          </article>
+
+          <article class="comparison-example">
+            <h3>Odeonsplatz and Theatinerkirche</h3>
+            <p>See how royal squares and baroque churches appear before and after reconstruction.</p>
+            <div class="image-comparison" data-city="munich">
+              <div class="image-comparison__label image-comparison__label--left">Past</div>
+              <div class="image-comparison__label image-comparison__label--right">Present</div>
+
+              <div class="image-comparison__image-wrapper">
+                <img
+                  src="assets/images/munich/munich-2-present.jpg"
+                  alt="Modern view of Odeonsplatz in Munich"
+                  class="image-comparison__image"
+                  onerror="this.src=''"
+                />
+                <div class="image-comparison__overlay">
+                  <img
+                    src="assets/images/munich/munich-2-past.jpg"
+                    alt="Historic view of Odeonsplatz in Munich"
+                    class="image-comparison__image"
+                    onerror="this.src=''"
+                  />
+                </div>
+              </div>
+
+              <input
+                type="range"
+                class="image-comparison__slider"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Compare historical and modern Munich at Odeonsplatz"
+              />
+            </div>
+          </article>
+
+          <article class="comparison-example">
+            <h3>Theresienwiese &ndash; Oktoberfest Grounds</h3>
+            <p>Contrast fairground panoramas across the decades at the site of Oktoberfest.</p>
+            <div class="image-comparison" data-city="munich">
+              <div class="image-comparison__label image-comparison__label--left">Past</div>
+              <div class="image-comparison__label image-comparison__label--right">Present</div>
+
+              <div class="image-comparison__image-wrapper">
+                <img
+                  src="assets/images/munich/munich-3-present.jpg"
+                  alt="Modern view of Theresienwiese in Munich"
+                  class="image-comparison__image"
+                  onerror="this.src=''"
+                />
+                <div class="image-comparison__overlay">
+                  <img
+                    src="assets/images/munich/munich-3-past.jpg"
+                    alt="Historic view of Theresienwiese in Munich"
+                    class="image-comparison__image"
+                    onerror="this.src=''"
+                  />
+                </div>
+              </div>
+
+              <input
+                type="range"
+                class="image-comparison__slider"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Compare historical and modern Munich at Theresienwiese"
+              />
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <div class="container content-grid-inner animate-on-scroll">
+        <section class="content-card">
+          <h2>Short History</h2>
+          <p>
+            Munich was founded in the 12th century and became the residence city of the Wittelsbach dynasty. As the
+            capital of Bavaria, it developed grand squares, royal palaces, and baroque churches. The city suffered
+            heavy bombing in the Second World War but rebuilt its historic center. In the late 20th and early 21st
+            centuries, Munich evolved into a center for media, engineering, and research while preserving its
+            traditional Bavarian identity.
+          </p>
+        </section>
+
+        <section class="content-card">
+          <h2>Culture &amp; Lifestyle</h2>
+          <p>
+            Munich is often associated with gemütlichkeit—a cozy, friendly atmosphere. People gather in beer gardens
+            under chestnut trees, stroll through the English Garden, and attend concerts and theater performances.
+            The annual Oktoberfest attracts millions of visitors, but throughout the year local festivals, markets,
+            and football matches at the Allianz Arena shape everyday cultural life.
+          </p>
+        </section>
+
+        <section class="content-card">
+          <h2>Food Specialities</h2>
+          <div class="food-grid">
+            <article class="food-item">
+              <img src="assets/images/munich/munich-weisswurst.jpg" alt="Weißwurst with pretzel and mustard" onerror="this.style.display='none'" />
+              <h3>Weißwurst</h3>
+              <p>
+                A traditional Bavarian veal sausage, usually eaten before noon with sweet mustard, pretzel, and a
+                wheat beer.
+              </p>
+            </article>
+            <article class="food-item">
+              <img src="assets/images/munich/munich-brezel.jpg" alt="Large Bavarian pretzel" onerror="this.style.display='none'" />
+              <h3>Brezel (Pretzel)</h3>
+              <p>
+                Soft, salty pretzels are an iconic Bavarian snack, a staple of Munich's famous beer gardens.
+              </p>
+            </article>
+            <article class="food-item">
+              <img src="assets/images/munich/munich-hendl.jpg" alt="Roast chicken on a plate" onerror="this.style.display='none'" />
+              <h3>Hendl</h3>
+              <p>
+                Roast chicken often served at Oktoberfest tents, symbolizing the mix of festival culture and hearty
+                Bavarian food.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-card">
+          <h2>Interesting Facts</h2>
+          <ul class="fact-list">
+            <li>Munich’s name comes from “bei den Mönchen” – “by the monks”.</li>
+            <li>The city hosted the 1972 Summer Olympics, leaving behind modern sports facilities and parks.</li>
+            <li>BMW’s headquarters and museum are located here, making Munich a symbol of German engineering.</li>
+            <li>The English Garden is one of the largest urban parks in the world, even featuring a surfing wave.</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Munich &middot; German Cities: Past and Present.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+

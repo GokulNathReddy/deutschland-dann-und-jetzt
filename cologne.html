@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cologne &middot; German Cities: Past and Present</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body class="city-page">
+  <div class="bg-orbs"><div class="orb-3"></div></div>
+  <div id="cursor-blob"></div>
+  <div class="flag-stripe" aria-hidden="true"></div>
+
+  <header class="island-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" id="logo">
+        <span class="logo-main">German Cities</span>
+        <span class="logo-sub">Past &amp; Present</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="berlin.html">Berlin</a></li>
+          <li><a href="munich.html">Munich</a></li>
+          <li><a href="hamburg.html">Hamburg</a></li>
+          <li><a href="cologne.html" class="active">Cologne</a></li>
+          <li><a href="frankfurt.html">Frankfurt</a></li>
+          <li><a href="dresden.html">Dresden</a></li>
+          <li><a href="leipzig.html">Leipzig</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light/dark mode">
+        <span class="theme-icon" aria-hidden="true">☀️</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="city-hero">
+      <div class="container animate-on-scroll">
+        <p class="city-label">City</p>
+        <h1>Cologne (Köln)</h1>
+        <p class="city-tagline">
+          A Rhine city with Roman roots, a world‑famous cathedral, and one of Germany's liveliest Carnival traditions.
+        </p>
+      </div>
+    </section>
+
+    <section class="comparison-section">
+      <div class="container">
+        <header class="section-header animate-on-scroll">
+          <h2>Cologne: Past and Present</h2>
+          <p>Explore multiple Rhine-side views to see how Cologne rebuilt and reimagined itself.</p>
+        </header>
+
+        <div class="comparison-examples animate-on-scroll">
+          <article class="comparison-example">
+            <h3>Cologne Cathedral and Old Town</h3>
+            <p>Compare bomb-damaged surroundings with the rebuilt square and river promenade.</p>
+            <div class="image-comparison" data-city="cologne">
+              <div class="image-comparison__label image-comparison__label--left">Past</div>
+              <div class="image-comparison__label image-comparison__label--right">Present</div>
+              <div class="image-comparison__image-wrapper">
+                <img src="assets/images/cologne/cologne-1-present.jpg" alt="Modern view of Cologne Cathedral and Old Town" class="image-comparison__image" onerror="this.src=''" />
+                <div class="image-comparison__overlay">
+                  <img src="assets/images/cologne/cologne-1-past.jpg" alt="Historical photograph of Cologne Cathedral and Old Town" class="image-comparison__image" onerror="this.src=''" />
+                </div>
+              </div>
+              <input type="range" class="image-comparison__slider" min="0" max="100" value="50" aria-label="Compare historical and modern Cologne Cathedral area" />
+            </div>
+          </article>
+
+          <article class="comparison-example">
+            <h3>Hohenzollern Bridge and Love Locks</h3>
+            <p>See how a railway bridge turned into a modern tourist spot decorated with padlocks.</p>
+            <div class="image-comparison" data-city="cologne">
+              <div class="image-comparison__label image-comparison__label--left">Past</div>
+              <div class="image-comparison__label image-comparison__label--right">Present</div>
+              <div class="image-comparison__image-wrapper">
+                <img src="assets/images/cologne/cologne-2-present.jpg" alt="Modern Hohenzollern Bridge with love locks in Cologne" class="image-comparison__image" onerror="this.src=''" />
+                <div class="image-comparison__overlay">
+                  <img src="assets/images/cologne/cologne-2-past.jpg" alt="Historic view of Hohenzollern Bridge in Cologne" class="image-comparison__image" onerror="this.src=''" />
+                </div>
+              </div>
+              <input type="range" class="image-comparison__slider" min="0" max="100" value="50" aria-label="Compare historical and modern Hohenzollern Bridge in Cologne" />
+            </div>
+          </article>
+
+          <article class="comparison-example">
+            <h3>Rhine Promenade</h3>
+            <p>Contrast industrial riverfront scenes with today&rsquo;s recreational areas and modern buildings.</p>
+            <div class="image-comparison" data-city="cologne">
+              <div class="image-comparison__label image-comparison__label--left">Past</div>
+              <div class="image-comparison__label image-comparison__label--right">Present</div>
+              <div class="image-comparison__image-wrapper">
+                <img src="assets/images/cologne/cologne-3-present.jpg" alt="Modern Rhine promenade in Cologne" class="image-comparison__image" onerror="this.src=''" />
+                <div class="image-comparison__overlay">
+                  <img src="assets/images/cologne/cologne-3-past.jpg" alt="Historic riverfront view of Cologne" class="image-comparison__image" onerror="this.src=''" />
+                </div>
+              </div>
+              <input type="range" class="image-comparison__slider" min="0" max="100" value="50" aria-label="Compare historical and modern Rhine promenade in Cologne" />
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <div class="container content-grid-inner animate-on-scroll">
+        <section class="content-card">
+          <h2>Short History</h2>
+          <p>
+            Cologne was founded as a Roman colony and later became an important medieval trading city. Its Gothic
+            cathedral, begun in the 13th century and completed in the 19th, symbolises the city's long religious and
+            architectural history. Much of Cologne was destroyed during the Second World War, but the cathedral
+            survived and reconstruction reshaped the city into a modern regional center on the Rhine.
+          </p>
+        </section>
+
+        <section class="content-card">
+          <h2>Culture &amp; Lifestyle</h2>
+          <p>
+            Cologne is famous for its friendly atmosphere and humor. Locals pride themselves on the annual
+            <em>Kölner Karneval</em>, when parades, costumes, and street parties take over the city. The Rhine
+            promenade, museums, and a strong media industry create a lively urban culture. The local dialect,
+            Kölsch, appears in songs and everyday expressions, providing authentic material for language learners.
+          </p>
+        </section>
+
+        <section class="content-card">
+          <h2>Food Specialities</h2>
+          <div class="food-grid">
+            <article class="food-item">
+              <img src="assets/images/cologne/cologne-koelsch.jpg" alt="Glass of Kölsch beer" onerror="this.style.display='none'" />
+              <h3>Kölsch</h3>
+              <p>A light, top‑fermented beer served in small cylindrical glasses. Each brewery has its own variation and traditional pub.</p>
+            </article>
+            <article class="food-item">
+              <img src="assets/images/cologne/cologne-halver-hahn.jpg" alt="Rye roll with cheese and mustard" onerror="this.style.display='none'" />
+              <h3>Halver Hahn</h3>
+              <p>Despite its name ("half a chicken"), this is a rye roll with cheese, mustard, and pickles — a beloved local snack with a quirky Cologne sense of humor.</p>
+            </article>
+            <article class="food-item">
+              <img src="assets/images/cologne/cologne-heaven-earth.jpg" alt="Dish of Himmel un Ääd with sausage" onerror="this.style.display='none'" />
+              <h3>Himmel un Ääd</h3>
+              <p>Literally "heaven and earth": mashed potatoes and apple sauce, often served with fried black pudding.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-card">
+          <h2>Interesting Facts</h2>
+          <ul class="fact-list">
+            <li>Cologne Cathedral was once the tallest building in the world.</li>
+            <li>The city's Roman past is visible in archaeological sites and the Roman‑Germanic Museum.</li>
+            <li>"Eau de Cologne" (Kölnisch Wasser) was first produced here in the 18th century.</li>
+            <li>During Carnival, normal social rules are relaxed and the city adopts the slogan "Et kütt wie et kütt".</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <section class="landmark-3d">
+      <div class="container animate-on-scroll">
+        <header class="section-header">
+          <h2>3D Landmark Viewer: Cologne Cathedral</h2>
+          <p>Explore the awe-inspiring scale of Cologne Cathedral in full 3D.</p>
+        </header>
+
+        <div class="landmark-embed-wrapper">
+          <model-viewer
+            src="assets/models/cologne/model.glb"
+            alt="A 3D model of Cologne Cathedral"
+            auto-rotate
+            camera-controls
+            ar
+            shadow-intensity="1"
+            loading="lazy">
+            <div class="embed-placeholder" slot="poster" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(0,0,0,0.5); width: 100%; height: 100%; border-radius: 16px;">
+              <svg style="width: 48px; height: 48px; fill: white; margin-bottom: 1rem;" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              <h3 style="color: white; margin-bottom: 0.5rem; text-align: center;">Loading 3D Model...</h3>
+              <p style="color: rgba(255,255,255,0.8); text-align: center;">Cologne Cathedral (~2.2 MB)</p>
+            </div>
+          </model-viewer>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Cologne &middot; German Cities: Past and Present.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
